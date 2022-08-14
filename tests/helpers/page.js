@@ -4,7 +4,10 @@ const userFactory = require('../factories/user');
 
 class Page {
   static async build() {
-    const browser = await pt.launch();
+    const browser = await pt.launch({
+      headless: true,
+      args: ['--no-sandbox']
+    });
 
     const page = await browser.newPage();
 
