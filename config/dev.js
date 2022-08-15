@@ -3,6 +3,8 @@ module.exports = {
     '70265989829-0t7m7ce5crs6scqd3t0t6g7pv83ncaii.apps.googleusercontent.com',
   googleClientSecret: '8mkniDQOqacXtlRD3gA4n2az',
   mongoURI: process.env.MONGO_URI,
-  cookieKey: '123123123',
-  REDIS_URL: 'redis://127.0.0.1:6379'
+  cookieKey: process.env.COOKIE_KEY,
+  REDIS_URL: 'redis://127.0.0.1:6379',
+  accessKeyId: process.env.AWS_ACCESS_KEY,
+  secretAccessKey: process.env.AWS_SECRET_KEY
 };
